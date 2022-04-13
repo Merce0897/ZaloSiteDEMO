@@ -1,0 +1,521 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.open {
+    display: block !important;
+}
+
+.opening a{
+    color: rgb(5,115,255) !important;
+}
+
+.vietnamese {
+    display: block;
+}
+
+.english {
+    display: none;
+}
+
+/* Header */
+
+#Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 0.2rem #ccc;
+    position: rbelative;
+    z-index: 1;
+}
+
+.Header_img {
+    width: 325%;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.Navbar {
+    display: flex;
+    margin-left: 10rem;
+
+}
+
+.Nav-items {
+    list-style-type: none;
+    display: block;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.Nav-items a:hover {
+    color: rgb(5,115,255);
+}
+
+.Nav-items a {
+    display: block;
+    line-height: 6rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Container */
+
+#Container {
+    background-color: rgb(224,232,239);
+    min-height: 64rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mainpage {
+    background-color: #fff;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 90%;
+}
+
+.Mainpage_header {
+    padding-top: 10rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.Mainpage_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Info_item {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.btn {
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+    outline: solid 0.1rem rgb(5,115,255);
+    cursor: pointer;
+}
+
+.Download {
+    background-color: rgb(5,115,255);
+    color: #fff;
+}
+
+.Download:hover {
+    background-color: rgb(0,92,209);   
+}
+
+.Lite {
+    margin: 0 2rem;
+    background-color: #fff;
+    color: rgb(5,115,255);
+}
+
+/* Footer */
+
+#Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 6rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.Footer_img {
+    position: absolute;
+    right: 6rem;
+    bottom: 5rem;
+    cursor: pointer;
+}
+
+/* Modal */
+
+#Modal_container {
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    height: 53rem;
+    width: 38rem;
+    right: 6rem;
+    top: 10.5rem;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: 0.2s ease-in-out;
+    animation: RiseIn 0.2s linear; 
+}
+
+.Modal_container-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.circle_btn {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    margin-left: 1.5rem;
+    background-color: rgb(49, 131, 255);
+    color: #fff;
+    position: relative;
+}
+
+.circle_btn-detail {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1.6rem 1.2rem;
+    top: 5.5rem;
+    left: -25rem;
+    min-width: 34rem;
+    border-radius: 1rem;
+    z-index: 2;
+    display: none;
+}
+
+.circle_btn-detail::after {
+    position: absolute;
+    content: '';
+    left: 26.5rem;
+    top: -3rem;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 1rem solid #fff;
+    border-top: 2rem solid transparent;
+    z-index: -1;
+}
+
+.circle_btn-detail:hover {
+    background-color: #ccc;
+}
+
+.circle_btn:hover {
+    background-color: rgb(144, 187, 251);
+    cursor: pointer;
+}
+
+.Zalo_active {
+    height: 1.2rem;
+    width: 1.2rem;
+    position: absolute;
+    background-color: rgb(0,197,120);
+    border: solid 0.2rem #fff;
+    border-radius: 50%;
+    left: 4rem;
+    top: 3.6rem;
+}
+
+.Modal_container-content-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.Chat_btn {
+    width: 100%;
+    border: none;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.Modal_container-content-language {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.Language_btn {
+    border: none;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.4rem 1.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.Language_btn.active {
+    background-color: rgb(210, 230, 255) !important;
+    color: rgb(5,115,255) !important;
+}
+
+.Modal_container-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.Modal_container-header-user {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid 0.3rem rgb(225, 225, 225);
+    display: none;
+}
+
+.Modal_container-content-chatbox {
+    display: flex;
+    align-items: center;
+    padding: 3.5rem 2rem;
+    justify-content: space-between;
+    display: none;
+}
+
+.Modal_container-chatbox-input {
+    border: none;
+    min-width: 26rem;
+    font-size: 1.4rem;
+}
+
+.Modal_container-chatbox-input:focus {
+    outline: none;
+}
+
+.Modal_container-chatbox-icon {
+    font-size: 1.8rem;
+}
+
+@keyframes RiseIn {
+    0% {
+        transform: scale(10%);
+        opacity: 0;
+        transform-origin: bottom right;
+    }
+    50% {
+        transform: scale(50%);
+        opacity: 0.5;
+        transform-origin: bottom right;
+    }
+    to {
+        transform: scale(100%);
+        opacity: 1;
+        transform-origin: bottom right;
+    }
+}
+
+/* Tính năng CSS */
+
+.Mainpage_header-TN {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}   
+
+.Mainpage_content-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 1rem;
+    border-bottom: solid 0.2rem rgb(229, 229, 229);
+}
+
+.Mainpage_content-script {
+    display: flex;
+}
+
+.TN-content-icon {
+    font-size: 4rem;
+    margin-right: 2rem;
+    color: rgb(5,115,255);
+}
+
+.Mainpage_content-box-title {
+    line-height: 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(5,115,255);
+}
+
+.Mainpage_content-info {
+    line-height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.Mainpage_content-info li {
+    list-style-type: none;
+}
+
+.Footer_gototop {
+    position: fixed;
+    background-color: rgb(204, 204, 204);
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    right: 8rem;
+    bottom: 8rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+/* Bảo mật CSS */
+
+.Mainpage_header-BM {
+    background: url(https://stc-zaloprofile.zdn.vn/security/img/impression-header.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.Mainpage_header-BM-title {
+    color: #fff;
+    font-size: 7rem;
+}
+
+.Mainpage_content-BM-box {
+    margin-top: 4rem;
+}
+
+.Mainpage_content-BM-title {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+    border-bottom: solid 0.2rem #ccc;
+}
+
+.Mainpage_content-BM-info {
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-align: justify;
+}
+
+.Mainpage_content-BM-numlist {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    padding-left: 5rem;
+    font-weight: 700;
+}
+
+.Mainpage_content-BM-list {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    padding: 2rem 0 2rem 5rem;
+    text-align: justify;
+}
+
+/* Liên hệ CSS */
+
+.Mainpage_header-LH {
+    padding: 2rem 0;
+    border-bottom: solid 0.2rem rgb(228, 228, 228);
+}
+
+.Mainpage_header-LH-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.Mainpage_header-LH-box {
+    display: flex;
+}
+
+.Mainpage_header-LH-info {
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.Mainpage_content-LH {
+    padding-top: 2.5rem;
+}
+
+.Mainpage_content-LH-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Mainpage_content-LH-box {
+    display: flex;
+    width: 33%;
+    margin-bottom: 5rem;
+}
+
+.Mainpage_content-LH-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+}
+
+.Mainpage_content-LH-contact {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.Mainpage_content-LH-link {
+    color: rgb(22,173,249);
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    display: block;
+    text-decoration: none;
+}
+
+.Mainpage_content-LH-QR {
+    display: block;
+    margin: auto;
+}
+
+/* Report CSS */
+
+.Mainpage_content-RP {
+    padding: 2rem 0;
+}
+
+.Mainpage_content-RP-title {
+    font-size: 3rem;
+    padding-top: 1rem;
+}

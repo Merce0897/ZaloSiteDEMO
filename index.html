@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalo PC - Tải Zalo PC về để làm việc</title>
+    <link rel="icon" href="./assets/img/Zalo_app.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="Header">
+        <a href="">
+            <img class="Header_img" src="./assets/img/Zalo_logo.svg" alt="zalo">
+        </a>
+        <ul class="Navbar">
+            <li class="Nav-items opening">
+                <a href="#">ZALO PC</a>
+            </li>
+            <li class="Nav-items">
+                <a href="./branch_pages/tinhnang.html">TÍNH NĂNG</a>
+            </li>
+            <li class="Nav-items">
+                <a href="https://oa.zalo.me/home" target="_blank">OFFICIAL ACCOUNT</a>
+            </li>
+            <li class="Nav-items">
+                <a href="https://oa.zalo.me/home" target="_blank">NHÀ PHÁT TRIỂN</a>
+            </li>
+            <li style="text-decoration: none;" class="Nav-items">
+                <a href="./branch_pages/baomat.html">BẢO MẬT</a>
+            </li>
+            <li class="Nav-items">
+                <a href="https://help.zalo.me/?utm_source=linking&utm_medium=nav_home" target="_blank">TRỢ GIÚP</a>
+            </li>
+            <li class="Nav-items">
+                <a href="./branch_pages/lienhe.html">LIÊN HỆ</a>
+            </li>
+            <li class="Nav-items">
+                <a href="./branch_pages/report.html">BÁO CÁO VI PHẠM</a>
+            </li>
+            <li class="Nav-items">
+                <a href="https://chat.zalo.me/" target="_blank" style="color: rgb(5,115,255);">ĐĂNG NHẬP</a>
+            </li>
+        </ul>
+    </div>
+    <div id="Container">
+        <div class="Mainpage">
+            <div class="Mainpage_header" style="margin-bottom: 4rem">
+                <h1>Tải Zalo PC cho máy tính</h1>
+                <h2>Ứng dụng Zalo PC đã có mặt trên Windows, Mac OS, Web</h2>
+            </div>
+            <div class="Mainpage_content" style="padding-bottom: 10rem;">
+                <div class="Content_info">
+                    <ul class="Info_list">
+                        <li class="Info_item"><i class="fa-solid fa-check" style="margin-right: 2rem; color: rgb(5,115,255);"></i>Gửi file, ảnh, video cực nhanh lên đến 1GB</li>
+                        <li class="Info_item"><i class="fa-solid fa-check" style="margin-right: 2rem; color: rgb(5,115,255);"></i>Đồng bộ tin nhắn với điện thoại</li>
+                        <li class="Info_item"><i class="fa-solid fa-check" style="margin-right: 2rem; color: rgb(5,115,255);"></i>Tối ưu cho chat nhóm và trao đổi công việc</li>
+                    </ul>
+
+                    <button class="Download btn">
+                        <i class="fa-solid fa-circle-arrow-down" style="margin-right: 1.5rem;"></i></i>Tải ngay
+                    </button>
+
+                    <a href="https://chat.zalo.me/" target="_blank">
+                        <button class="Lite btn">
+                            <i class="fa-solid fa-globe" style="margin-right: 1.5rem;"></i>Dùng bản web
+                        </button>
+                    </a>
+                </div>
+                <img src="./assets/img/Zalo_mainpage_img.png" alt="" style="width: 50%;">
+            </div>
+        </div>
+        
+    </div>
+    <div id="Footer">
+        © 2019 Một sản phẩm của Zalo Group
+        <img src="./assets/img/Zalo_app.svg" alt="" class="Footer_img">
+    </div>
+    <div id="Modal_container">
+        <div class="Modal_container-header" style="background-color: rgb(5,115,255); padding: 2rem;">
+            <div class="Modal_container-header-title">
+                <span class="Zalo_active"></span>
+                <img src="./assets/img/Zalo_app.svg" alt="" style="border-radius: 50%; margin-right: 2rem;">
+                <p style="color: #fff;font-size: 2.2rem; font-weight: 600;">
+                    Zalo Hỗ Trợ PC
+                </p>
+                <button class="circle_btn add_widget">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div class="circle_btn-detail">
+                        Thêm Zalo Chat Widget vào trang web của bạn
+                    </div>
+                    <div class="circle_btn-detail">
+                        Add Zalo Chat Widget to your website
+                    </div>
+                </button>
+                <button class="circle_btn" onclick="hideZalo()"><i class="fa-solid fa-angle-down"></i></button>
+            </div>
+            
+            <div class="Modal_container-header-box">
+                <div class="Modal_container-header-greeting">
+                    <h2 class="vietnamese" 
+                    style="color: #fff; font-size: 2.8rem; margin-bottom: 1.5rem;">
+                    Xin chào!
+                    </h2>
+                    <p class="vietnamese" 
+                    style="color: #fff; font-size: 1.4rem; margin-bottom: 1rem;">
+                    Rất vui khi được hỗ trợ bạn
+                    </p>
+                    <h2 class="english"
+                    style="color: #fff; font-size: 2.8rem; margin-bottom: 1.5rem;">
+                        Hello!
+                    </h2>
+                    <p class="english"
+                    style="color: #fff; font-size: 1.4rem; margin-bottom: 1rem;">
+                        Happy to support you
+                    </p>
+                </div>
+    
+                <img src="./assets/img/Zalo_user.png" alt="" class="Modal_container-header-user">
+            </div>
+            
+        </div>
+
+        <div class="Modal_container-content">
+            <div class="Modal_container-content-selection">
+                <p class="vietnamese hidden" 
+                style="padding: 3rem 0; font-size: 1.8rem; color: rgb(124, 124, 124);">
+                Bắt đầu trò chuyện với Zalo Hỗ Trợ PC
+                </p>
+                <button class="Chat_btn vietnamese hidden" 
+                style="background-color: rgb(36, 121, 249); color: #fff;">
+                Chat bằng Zalo
+                </button>
+                <button class="Chat_btn vietnamese hidden" 
+                style="margin-bottom: 5rem;">
+                Chat nhanh
+                </button>
+                <p class="english hidden" 
+                style="padding: 3rem 0; font-size: 1.8rem; color: rgb(124, 124, 124);">
+                Start conversation with Zalo Hỗ Trợ PC
+                </p>
+                <button class="Chat_btn english hidden" 
+                style="background-color: rgb(36, 121, 249); color: #fff;">
+                Chat on Zalo
+                </button>
+                <button class="Chat_btn english hidden" 
+                style="margin-bottom: 5rem;">
+                Quick chat
+                </button>
+            </div>
+            
+            <div class="Modal_container-content-language">
+                <button class="Language_btn active">Tiếng Việt</button>
+                <button class="Language_btn">English</button>
+            </div>
+
+            <div class="Modal_container-content-chatbox">
+                <input class="Modal_container-chatbox-input" type="text" placeholder="Nhập tin nhắn, nhấn Enter để gửi...">
+                <div class="Modal_container-chatbox-icon">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-face-grin" style="margin-left: 1.5rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
