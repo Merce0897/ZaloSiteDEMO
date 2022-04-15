@@ -115,11 +115,21 @@ h2 {
     list-style-type: none;
 }
 
+.Content_info {
+    flex: 2;
+}
+
+.Btn_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
 .btn {
     border: none;
-    padding: 1.5rem 3rem;
+    padding: 1rem 1.5rem;
     font-size: 2rem;
-    margin-top: 4rem;
     border-radius: 0.5rem;
     outline: solid 0.1rem rgb(5,115,255);
     cursor: pointer;
